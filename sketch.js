@@ -43,7 +43,6 @@ function setup() {
       let unProjectil = new Projectil()
       projectils[i] = unProjectil
     }
-    console.log(projectils)
     if(!start){
       button = createButton("START!");
       button.mouseClicked(setStart);
@@ -82,48 +81,6 @@ function draw() {
         resetVitesse = false
       }
     }
-    /*if(score == 5000){
-      console.log("5000")
-      for(var i=0;i<10;i++){
-        console.log(projectils[i].speed = projectils[i].speed)
-      }
-    }
-    if(score == 10000){
-      console.log("10000")
-      for(var i=0;i<10;i++){
-        console.log(projectils[i].speed = projectils[i].speed)
-      }
-    }
-    if(score == 15000){
-      console.log("15000")
-      for(var i=0;i<10;i++){
-        console.log(projectils[i].speed = projectils[i].speed)
-      }
-    }
-    if(score == 20000){
-      console.log("20000")
-      for(var i=0;i<10;i++){
-        console.log(projectils[i].speed = projectils[i].speed)
-      }
-    }
-    if(score == 25000){
-      console.log("25000")
-      for(var i=0;i<10;i++){
-        console.log(projectils[i].speed = projectils[i].speed)
-      }
-    }
-    if(score == 30000){
-      console.log("30000")
-      for(var i=0;i<10;i++){
-        console.log(projectils[i].speed = projectils[i].speed)
-      }
-    }
-    if(score == 35000){
-      console.log("35000")
-      for(var i=0;i<10;i++){
-        console.log(projectils[i].speed = projectils[i].speed)
-      }
-    }*/
     text(score, 300, 50);
     // Gestion des mouvements
     if (keyIsDown(RIGHT_ARROW) && posX< width) {
